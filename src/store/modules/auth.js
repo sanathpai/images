@@ -8,7 +8,7 @@ const getters = {//used to query over state basically sort or compute
 }
 };
 const actions = {
-    logout: function ({ commit }) {//commit is used to call mutations
+    logout: function ({ commit }) {//commit is used to multi mutations easily
         commit('setToken', null);
     }
 
