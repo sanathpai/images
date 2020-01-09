@@ -1,3 +1,4 @@
+import api from '../../api/imgur';
 const state = {
     token: null
 
@@ -11,6 +12,10 @@ const actions = {
     logout: function ({ commit }) {//commit is used to multi mutations easily
         commit('setToken', null);
     }
+    login: function ()=>
+{
+    api.login();
+}
 
 };
 const mutations = {
