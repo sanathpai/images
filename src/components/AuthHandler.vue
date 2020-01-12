@@ -5,7 +5,10 @@
 
 <script>
 export default {
-  name: "AuthHandler"
+  name: "AuthHandler",
+  created() {
+    //refer docx for lifecycles under vue instance in official vue.js docx
+  }
 };
 </script>
 
