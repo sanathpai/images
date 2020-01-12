@@ -1,8 +1,8 @@
 <template>
   <div class="navbar navbar-dark bg-dark">
     <a href="/" class="navbar-brand">Image Storage</a>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav item my-2 my-lg-0">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav item">
         <a class="nav-link" href="#" @click="login">Login</a>
       </li>
     </ul>
