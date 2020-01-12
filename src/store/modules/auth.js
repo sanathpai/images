@@ -6,28 +6,30 @@ const state = {
 
 };
 
-
 const getters = {
     //used to query over state basically sort or compute
-    isLoggedIn: function (state)=> {
-    return !!state.token
-    //!! =easy way to tearn a value into token
-}
+    isLoggedIn: function (state) {
+        return !!state.token;
+        //!! =easy way to tearn a value into token
+    }
 };
+
 
 const actions = {
     logout: function ({ commit }) {//commit is used to multi mutations easily
         commit('setToken', null);
     },
 
-    login: () => { api.login(); }
+    login: function () {
+        api.login();
+    }
 
 };
 const mutations = {
-    setToken: function (state, token) => {
-    state.token = token;
+    setToken: function (state, token) {
+        state.token = token;
 
-}
+    }
 };
 export default {
     state: state,
