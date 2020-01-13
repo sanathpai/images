@@ -4,7 +4,13 @@
 
     <ul class="navbar-nav ml-auto">
       <li class="nav item">
-        <a class="nav-link" href="#" @click="login">Login</a>
+        <div v-if="isLoggedIn" class="text-white">
+          Galleries Button
+          upload Button
+          Logout Button
+        </div>
+        <!--v else should be right after vif-->
+        <a v-else class="nav-link" href="#" @click="login">Login</a>
       </li>
     </ul>
   </div>
