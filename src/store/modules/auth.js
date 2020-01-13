@@ -18,6 +18,7 @@ const getters = {
 const actions = {
     logout: function ({ commit }) {//commit is used to multi mutations easily
         commit('setToken', null);
+        window.localStorage.removeItem('imgur_token');
     },
 
     login: function () {
