@@ -4,10 +4,10 @@
 
     <ul class="navbar-nav ml-auto">
       <li class="nav item">
-        <div v-if="isLoggedIn" class="text-white">
-          Galleries Button
-          upload Button
-          Logout Button
+        <div v-if="isLoggedIn" class="text-white horizontal">
+          <a class="nav-link text-white" href="#">Galleries</a>
+          <a class="nav-link text-white" href="#">Upload</a>
+          <a class="nav-link text-white" href="#">Logout</a>
         </div>
         <!--v else should be right after vif-->
         <a v-else class="nav-link" href="#" @click="login">Login</a>
@@ -29,4 +29,8 @@ export default {
 
 
 <style scoped>
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
 </style>
