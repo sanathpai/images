@@ -7,11 +7,12 @@ import AuthHandler from './components/AuthHandler';
 
 Vue.use(VueRouter);
 
-const router = new VueRouter({
+export const router = new VueRouter({
     mode: 'history',//says to use browser router mode and not hash router
     routes: [
         { path: '/oauth2/callback', component: AuthHandler }
-    ]
+
+    ]//window.location completely reloades a page
 });
 
 
