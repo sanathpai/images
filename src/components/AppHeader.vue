@@ -7,8 +7,8 @@
         <div v-if="isLoggedIn" class="text-white horizontal">
           <router-link to="/" class="nav-link text-white">Galleries</router-link>
           <!--causes full reload so avoid-->
-          <router-link to="/Upload" class="nav-link text-white">Upload</router-link>
-          <router-link class="nav-link text-white" @click="logout">Logout</router-link>
+          <router-link to="/upload" class="nav-link text-white">Upload</router-link>
+          <a class="nav-link text-white" @click="logout">Logout</a>
         </div>
         <!--v else should be right after vif-->
         <a v-else class="nav-link" href="#" @click="login">Login</a>
