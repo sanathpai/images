@@ -1,6 +1,6 @@
 <template>
   <div class="navbar navbar-dark bg-dark">
-    <a href="/" class="navbar-brand">Image Storage</a>
+    <router-link to="/" class="navbar-brand">Image Storage</router-link>
 
     <ul class="navbar-nav ml-auto">
       <li class="nav item">
