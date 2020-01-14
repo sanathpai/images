@@ -23,4 +23,10 @@ const mutations = {
         state.images = images;
     }
 };
+export default {
+    state: state,
+    getters: getters,
+    actions: actions,
+    mutations: mutations
 
+};
