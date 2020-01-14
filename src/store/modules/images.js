@@ -13,9 +13,12 @@ const getters = {
 };
 
 const actions = {
-    async fetchImages: function ({ rootState }) {//rootstate gives ability to reach into other modules for ex to get token from auth.js
+    async fetchImages({ rootState, commit }) {
+        //rootstate gives ability to reach into other modules for ex to get token from auth.js
         const { token } = rootState.auth;
         const response = await api.fetchImages(token);
+        commit('setImages', response.data.data)//first is axios data then its imgurs data that is returned check network tab in ctrl+shift+i
+            ;
     }
 };
 const mutations = {
