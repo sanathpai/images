@@ -1,3 +1,5 @@
+import api from '../../api/imgur';
+
 const state = {
     images: []
 
@@ -11,8 +13,9 @@ const getters = {
 };
 
 const actions = {
-    fetchImages: function () {
-
+    async fetchImages: function ({ rootState }) {//rootstate gives ability to reach into other modules for ex to get token from auth.js
+        const { token } = rootState.auth;
+        const response = await api.fetchImages(token);
     }
 };
 const mutations = {

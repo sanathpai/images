@@ -7,5 +7,6 @@ Vue.use(Vuex);//for communication between Vuex and Vue
 export default new Vuex.Store({
     modules: {
         auth: auth
+        images: images
     }
 });
