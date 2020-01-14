@@ -5,9 +5,10 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav item">
         <div v-if="isLoggedIn" class="text-white horizontal">
-          <a class="nav-link text-white">Galleries</a>
-          <a class="nav-link text-white">Upload</a>
-          <a class="nav-link text-white" @click="logout">Logout</a>
+          <router-link to="/" class="nav-link text-white">Galleries</router-link>
+          <!--causes full reload so avoid-->
+          <router-link to="/Upload" class="nav-link text-white">Upload</router-link>
+          <router-link class="nav-link text-white" @click="logout">Logout</router-link>
         </div>
         <!--v else should be right after vif-->
         <a v-else class="nav-link" href="#" @click="login">Login</a>
