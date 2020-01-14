@@ -11,7 +11,9 @@ const getters = {
 };
 
 const actions = {
+    fetchImages: function () {
 
+    }
 };
 const mutations = {
     setImages: function (state, images) {
