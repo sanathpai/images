@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img :src="image.link" v-for="image in allImages" />
+    HI
+    <!-- <img :src="image.link" v-for="image in allImages" /> -->
   </div>
 </template>
 
