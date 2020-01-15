@@ -1,5 +1,7 @@
 <template>
-  <h3>Hello</h3>
+  <div>
+    <img :src="image.link" v-for="image in allImages" />
+  </div>
 </template>
 
 <script>
